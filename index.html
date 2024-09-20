@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+    <a onclick="profile()" href="./profile.html"><h1>My Profile</h1></a>
+
+    <div>
+        <h2>Student Portal</h2>
+        <input type="text" placeholder="Type CNIC num to chk result" id="cnic">
+        <button onclick="result()">Show Result</button>
+        <table >
+            <tr>
+              <th>Course</th>
+              <th>Grade</th>
+              <th>Marks</th>
+              <th>Total Marks</th>
+            </tr>
+            <tr id="table">
+              <!-- <td></td>
+              <td></td>
+              <td></td> -->
+            </tr>
+          </table>
+    </div>
+</body>
+    <script src="app.js" type="module"></script>
+</html>
